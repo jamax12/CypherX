@@ -1,0 +1,22 @@
+# Exported from Render on 2025-03-10T13:47:59Z
+services:
+- type: web
+  name: CypherX
+  runtime: node
+  repo: https://github.com/Dark-Xploit/CypherX
+  plan: free
+  envVars:
+  - key: SESSION_ID
+    sync: false
+  - key: PREFIX
+    sync: false
+  - key: BOT_NAME
+    sync: false
+  - key: OWNER_NAME
+    sync: false
+  - key: OWNER_NUMBER
+    sync: false
+  region: oregon
+  buildCommand: yarn install
+  startCommand: 'yarn start'
+version: "1"
